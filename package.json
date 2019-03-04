@@ -23,7 +23,7 @@
   "author": "Tom MacWright <tom@macwright.org> (http://macwright.org/)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/node-s2.git"
+    "url": "https://github.com/HARCHHI/node-s2"
   },
   "engines": {
     "node": "*"
