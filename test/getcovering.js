@@ -45,7 +45,7 @@ test('getCoveringSync - llrect', function(t) {
         max_cells: 100
     });
 
-    t.equal(llcover.length, 34, 'cover.length');
+    t.equal(llcover.length, 40, 'cover.length');
     t.end();
 });
 
@@ -56,7 +56,7 @@ test('getCovering- llrect', function(t) {
         max_cells: 100
     }, function (err, cover) {
         t.ok(cover, 'generates async cover object');
-        t.equal(cover.length, 34, 'cover.length');
+        t.equal(cover.length, 40, 'cover.length');
         t.end();
     });
 
