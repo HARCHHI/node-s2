@@ -1,21 +1,21 @@
 {
   "name": "@mapbox/s2",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "main": "index.js",
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
-    "test": "jshint index.js && tap --tap test/*.js"
+    "install": "node-pre-gyp install --build-from-source",
+    "test": "jshint index.js && tap test/*.js"
   },
   "dependencies": {
-    "nan": "^2.4.0",
-    "node-pre-gyp": "^0.5.19"
+    "nan": "^2.12.1",
+    "node-pre-gyp": "^0.12.0"
   },
   "devDependencies": {
-    "tap": "~0.4.9",
+    "jshint": "^2.10.1",
+    "tap": "^12.5.3",
     "test-linestring": "0.0.1",
     "test-point": "0.0.2",
-    "test-polygon": "0.0.4",
-    "jshint": "~2.5.2"
+    "test-polygon": "0.0.4"
   },
   "bundledDependencies": [
     "node-pre-gyp"
@@ -32,8 +32,8 @@
   "binary": {
     "module_name": "_s2",
     "module_path": "./build/Release",
-    "host": "https://mapbox-node-binary.s3.amazonaws.com",
-    "remote_path": "./{name}/v{version}",
+    "host": "no_host",
+    "remote_path": "",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
   }
 }
